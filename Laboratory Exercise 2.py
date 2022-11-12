@@ -13,10 +13,10 @@ def menu():
     print("——==================——")
 
 def value():
-    print("Name:", name)
-    print("Address:", address)
-    print("Age:", age)
-    print("Phone Number:", phone)
+    print("Name:\t\t", name)
+    print("Address:\t", address)
+    print("Age:\t\t", age)
+    print("Phone Number:\t", phone)
     
 while True:
     # Display Menu
@@ -28,16 +28,19 @@ while True:
     # Selected Options
     # Option 1
     if option == 1:
-        name = input("Enter your full name: ")
-        address = input("Enter your Address: ")
-        age = int(input("Enter your age: "))
-        phone = int(input("Enter your phone number: "))
+        print("\n——====== ADD =======——")
+        name = input("Enter your full name: \t")
+        address = input("Enter your Address: \t")
+        age = int(input("Enter your age: \t"))
+        phone = int(input("Enter your number: \t"))
+        print("——==================——")
         
-        print("\nAdded Item:\n")
+        print("\n——=== ADDED ITEM ===——")
         contacts[name] = {"Name": name, "Address": address, "Age": age, "Phone Number": phone}
         value()
+        print("——==================——")
 
-        print("Saved!")
+        print("\n\tSaved!")
 
     # Option 2
     elif option == 2:
@@ -52,7 +55,7 @@ while True:
 
     # Option 3
     elif option == 3:
-        exit = input("Do you wish to close the program? (y/n): ")
+        exit = input("Do you wish to close \nthe program? (y/n): ")
         if exit == "n" or "N" or "No" or "NO":
             continue
         else:
