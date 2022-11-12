@@ -2,14 +2,15 @@
 # Laboratory Exercise 2: Contact Tracing
 # November 12, 2022
 
-# dictionaries
-informations = {
+# Dictionary
+contacts = {}
 
-}
-
-forSearch = {
-
-}
+def value():
+    print("\nAdded Item:\n")
+    print("Name:", name)
+    print("Address:", address)
+    print("Age:", age)
+    print("Phone Number:", phone)
 
 # Display Menu
 print("\n——====== Menu ======——")
@@ -30,13 +31,12 @@ if option == 1:
     phone = input("Enter your phone number: ")
 
     # variables ofr dictionaries
-    value = ("Name:", name, "\nAddress:", address, "\nAge:", age, "\nPhone Number:", phone)
-    forSearch[name] = value
+    contacts[name] = value()
 
 
     print("Saved!")
-    print(forSearch)
 
+ 
 
 # Option 2
 # Option 3
