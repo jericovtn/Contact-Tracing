@@ -5,6 +5,13 @@
 # Dictionary
 contacts = {}
 
+def menu():
+    print("\n——====== Menu ======——")
+    print("  1. Add an item")
+    print("  2. Search")
+    print("  3. Exit")
+    print("——==================——")
+
 def value():
     print("\nAdded Item:\n")
     print("Name:", name)
@@ -12,12 +19,9 @@ def value():
     print("Age:", age)
     print("Phone Number:", phone)
 
+
 # Display Menu
-print("\n——====== Menu ======——")
-print("  1. Add an item")
-print("  2. Search")
-print("  3. Exit")
-print("——==================——")
+menu()
 
 # User's Input
 option = int(input("\nWhat do you want to do? "))
@@ -33,12 +37,14 @@ if option == 1:
     # variables ofr dictionaries
     contacts[name] = value()
 
-
     print("Saved!")
 
- 
-
 # Option 2
+if option == 2:
+    search = input("Enter your full name: ")
+
+    if search in contacts:
+        value()
 # Option 3
 
 
