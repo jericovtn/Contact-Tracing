@@ -13,9 +13,16 @@ print("——==================——")
 option = int(input("\nWhat do you want to do? "))
 
 # Selected Options
-    # Option 1
-    # Option 2
-    # Option 3
+# Option 1
+if option == 1:
+    name = input("Enter your full name: ")
+    address = input("Enter your Address: ")
+    age = input("Enter your age: ")
+    phone = input("Enter your phone number: ")
+    print("Saved!")
+    
+# Option 2
+# Option 3
 
 
 
