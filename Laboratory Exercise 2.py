@@ -9,6 +9,8 @@ print("2. Search")
 print("3. Exit")
 
 # User's Input
+option = int(input("What do you want to do? "))
+
 # Selected Options
     # Option 1
     # Option 2
