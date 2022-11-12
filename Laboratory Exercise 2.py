@@ -40,7 +40,7 @@ while True:
         print("Saved!")
 
     # Option 2
-    if option == 2:
+    elif option == 2:
         search = input("Enter your full name: ")
 
         if search in contacts.keys():
@@ -49,7 +49,19 @@ while True:
                 print(item[0], ":", item[1])
         else:
             print("Contatcs Not Found!")
+
     # Option 3
+    elif option == 3:
+        exit = input("Do you wish to close the program? (y/n): ")
+        if exit == "n" or "N" or "No" or "NO":
+            continue
+        else:
+            break
+    
+    # Invalid Option
+    else:
+        print("Sorry, Invalid Option!")
+
 
 
 
