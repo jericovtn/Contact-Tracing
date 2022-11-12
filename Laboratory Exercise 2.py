@@ -36,26 +36,29 @@ while True:
         print("——==================——")
         
         print("\n——=== ADDED ITEM ===——")
-        contacts[name] = {"Name": name, "Address": address, "Age": age, "Phone Number": phone}
+        contacts[name] = {"Name\t\t": name, "Address\t\t": address, "Age\t\t": age, "Phone Number\t": phone}
         value()
         print("——==================——")
-
         print("\n\tSaved!")
 
     # Option 2
     elif option == 2:
-        search = input("Enter your full name: ")
+        search = input("\nEnter your full name: ")
 
+        print("\n——===== SEARCH =====——")
         if search in contacts.keys():
-            print("\nSearched Item:\n")
             for item in contacts[search].items():
                 print(item[0], ":", item[1])
         else:
             print("Contatcs Not Found!")
+        print("——==================——")
+        print("\n\tSaved!")
 
     # Option 3
     elif option == 3:
+        print("\n——====== EXIT ======——")
         exit = input("Do you wish to close \nthe program? (y/n): ")
+        print("——==================——")
         if exit == "n" or "N" or "No" or "NO":
             continue
         else:
@@ -63,7 +66,9 @@ while True:
     
     # Invalid Option
     else:
+        print("\n——==================——")
         print("Sorry, Invalid Option!")
+        print("——==================——")
 
 
 
