@@ -2,8 +2,18 @@
 # Laboratory Exercise 2: Contact Tracing
 # November 12, 2022
 
-print("For confirmation only.")
-print("Second Confirmation.")
+# Display Menu
+print("Menu")
+print("1. Add an item")
+print("2. Search")
+print("3. Exit")
+
+# User's Input
+# Selected Options
+    # Option 1
+    # Option 2
+    # Option 3
+
 
 
 
